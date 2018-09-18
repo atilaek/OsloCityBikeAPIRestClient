@@ -17,8 +17,8 @@ import java.io.IOException;
 public class OsloCityBikeServiceGenerator {
     public static final OsloCityBikeResourcesBundle OSLO_CITY_BIKE_RESOURCES_BUNDLE = new OsloCityBikeResourcesBundle();
     public static final String BASE_URL = OSLO_CITY_BIKE_RESOURCES_BUNDLE.getBaseUrl();
-    public static final String APIKEY_NAME = OSLO_CITY_BIKE_RESOURCES_BUNDLE.getApiKey_Name();
-    public static final String APIKEY_VALUE = OSLO_CITY_BIKE_RESOURCES_BUNDLE.getApiKey_Value();
+    public static final String APIKEY_PREFIX = OSLO_CITY_BIKE_RESOURCES_BUNDLE.getApiKey_Prefix();
+    public static final String APIKEY = OSLO_CITY_BIKE_RESOURCES_BUNDLE.getApiKey();
 
     private static OkHttpClient.Builder httpClient = new OkHttpClient.Builder().addInterceptor(new Interceptor() {
         @Override
@@ -27,7 +27,7 @@ public class OsloCityBikeServiceGenerator {
 
             // Request customization: add request headers
             Request.Builder requestBuilder = original.newBuilder()
-                    .header(APIKEY_NAME, APIKEY_VALUE);
+                    .header(APIKEY_PREFIX, APIKEY);
 
             Request request = requestBuilder.build();
             return chain.proceed(request);

@@ -1,6 +1,6 @@
 package com.restClientDemo.osloCityBike;
 
-import com.restClientDemo.osloCityBike.web.controller.OsloCityBikeController;
+import com.restClientDemo.osloCityBike.controller.OsloCityBikeController;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

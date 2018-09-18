@@ -1,8 +1,8 @@
-package com.restClientDemo.osloCityBike.web.controller;
+package com.restClientDemo.osloCityBike.controller;
 
-import com.restClientDemo.osloCityBike.domain.Stations;
-import com.restClientDemo.osloCityBike.domain.Availability;
-import com.restClientDemo.osloCityBike.domain.Status;
+import com.restClientDemo.osloCityBike.model.Stations;
+import com.restClientDemo.osloCityBike.model.Availability;
+import com.restClientDemo.osloCityBike.model.Status;
 import com.restClientDemo.osloCityBike.exception.ConnectionException;
 import com.restClientDemo.osloCityBike.service.IOsloCityBikeService;
 import com.restClientDemo.osloCityBike.service.OsloCityBikeServiceGenerator;

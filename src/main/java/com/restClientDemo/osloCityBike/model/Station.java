@@ -1,4 +1,4 @@
-package com.restClientDemo.osloCityBike.domain;
+package com.restClientDemo.osloCityBike.model;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;

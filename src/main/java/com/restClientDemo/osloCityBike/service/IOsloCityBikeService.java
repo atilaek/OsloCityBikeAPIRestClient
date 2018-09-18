@@ -1,7 +1,7 @@
 package com.restClientDemo.osloCityBike.service;
 
-import com.restClientDemo.osloCityBike.domain.Stations;
-import com.restClientDemo.osloCityBike.domain.Status;
+import com.restClientDemo.osloCityBike.model.Stations;
+import com.restClientDemo.osloCityBike.model.Status;
 import retrofit2.Call;
 import retrofit2.http.GET;
 
